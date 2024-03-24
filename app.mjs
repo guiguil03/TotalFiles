@@ -40,7 +40,7 @@ async function main() {
       console.log("salesTotals already exists.");
     }
     await fs.writeFile(salesTotalsPath, `${totalSales}€\n`, 'utf-8');
-    console.log(`Wrote sales totals ${totalSales}€ to salesTotals`);
+    console.log('Total at '  + new Date().toLocaleDateString() + ' from stores :  '+ totalSales+' €');
 
 }
 
